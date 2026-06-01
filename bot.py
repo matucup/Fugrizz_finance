@@ -12,7 +12,7 @@ SHEET_ID = os.environ.get("SHEET_ID")
 GOOGLE_CREDS = os.environ.get("GOOGLE_CREDS")
 
 def get_sheet():
-    creds_dict = json.loads(GOOGLE_CREDS.replace("\\n", "\n"))
+    creds_dict = json.loads(GOOGLE_CREDS)
     scopes = ["https://www.googleapis.com/auth/spreadsheets"]
     creds = Credentials.from_service_account_info(creds_dict, scopes=scopes)
     client = gspread.authorize(creds)
