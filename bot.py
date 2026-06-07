@@ -24,7 +24,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         "keterangan nominal\n\n"
         "Contoh: makan siang 35000\n\n"
         "Command:\n"
-        "/laporan - Ringkasan bulan ini"
+        "/laporan - Ringkasan  ini"
     )
 
 async def laporan(update: Update, context: ContextTypes.DEFAULT_TYPE):
